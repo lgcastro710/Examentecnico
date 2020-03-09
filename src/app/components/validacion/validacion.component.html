@@ -1,0 +1,303 @@
+<div class="content_validacion" fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
+  <div class="tabs-validation" fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+    <div class="option_tabs--select" fxLayoutAlign="center center">
+      <p>1</p>
+    </div>
+    <div class="barra_union"></div>
+    <div class="option_tabs" fxLayoutAlign="center center">
+      <p>2</p>
+    </div>
+    <div class="barra_union"></div>
+    <div class="option_tabs" fxLayoutAlign="center center">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="title_tbas" fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+    <h1>Validación de tu RUC y Dirección</h1>
+  </div>
+  <div class="checkebox_persona" fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+    <div class="r_btn">
+      <mat-radio-button value="1">Persona Natural</mat-radio-button>
+    </div>
+    <div class="r_btn">
+      <mat-radio-button value="1">Persona Juridica</mat-radio-button>
+    </div>
+    <div class="sect_form_ruc--dni">
+      <input type="text" placeholder="Ingrese RUC">
+     </div>
+    <div class="sect_form_ruc--dni">
+        <input type="text" placeholder="Ingrese DNI">
+     </div>
+  </div>
+  <div class="inf_btn" fxFlex="100" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="inf_agente" fxFlex="50" fxLayout="row" fxLayoutAlign="center center">
+      <span>Infomación del agente resgistrada en el SUNAT</span>
+    </div>
+    <div class="btn_registar--ruc" fxFlex="50" fxLayout="row" fxLayoutAlign="center center">
+        <button (click)="toggleRuc()">
+          registrar RUC
+        </button>
+    </div>
+  </div>
+  <div *ngIf="activateRuc" class="tabla_inf-sunat" fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+    <table>
+      <tbody fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
+        <tr fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+          <td class="inf_table" fxFlex="30" fxLayout="row" fxLayoutAlign="start center">
+            <p>RUC</p>
+          </td>
+          <td class="inf_table" fxFlex="70" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+        </tr>
+        <tr fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+          <td class="inf_table" fxFlex="30" fxLayout="row" fxLayoutAlign="start center">
+            <p>Nombre o razon social</p>
+          </td>
+          <td class="inf_table" fxFlex="70" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+        </tr>
+        <tr fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+          <td class="inf_table" fxFlex="30" fxLayout="row" fxLayoutAlign="start center">
+            <p>Nombre del constribuyente</p>
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+            <p>Dirección de domicilio</p>
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+          <td class="inf_table" fxFlex="10" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+        </tr>
+        <tr fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+          <td class="inf_table" fxFlex="30" fxLayout="row" fxLayoutAlign="start center">
+            <p>Tipo de via</p>
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+            <p>Nombre de via</p>
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+            <p>Numero</p>
+          </td>
+          <td class="inf_table" fxFlex="10" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+        </tr>
+        <tr fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+          <td class="inf_table" fxFlex="30" fxLayout="row" fxLayoutAlign="start center">
+            <p>Interior</p>
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+            <p>Lote</p>
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+            <p>Departamento</p>
+          </td>
+          <td class="inf_table" fxFlex="10" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+        </tr>
+        <tr fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+          <td class="inf_table" fxFlex="30" fxLayout="row" fxLayoutAlign="start center">
+            <p>Manzana</p>
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+            <p>Kilometro</p>
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+          <td class="inf_table" fxFlex="15" fxLayout="row" fxLayoutAlign="start center">
+            <p></p>
+          </td>
+          <td class="inf_table" fxFlex="10" fxLayout="row" fxLayoutAlign="start center">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="check_habilitar" fxFlex="100" fxLayout="row" fxLayoutAlign="start center">
+     <div class="check">
+      <mat-checkbox  (change)="openDatos()">
+        <p>La direción mostrada corresponde a la actual dirección de mi LOCAL COMERCIAL</p>
+      </mat-checkbox>
+     </div>
+  </div>
+  <div *ngIf="activateDatos" class="content_cards" fxFlex="100" fxLayout="column" fxLayoutAlign="start center">
+  <div  class="card_datos" fxFlex="100" fxLayout="row" fxLayoutAlign="start center">
+    <mat-card fxFlex="100" fxLayout="column" fxLayoutAlign="center start">
+      <h2>Dirección del comercio</h2>
+      <div class="inputs_datos" fxFlex="100" fxLayout="row" fxLayoutAlign="start center">
+        <div class="select_tipo-via" fxFlex="20" fxLayout="row" fxLayoutAlign="start center">
+          <mat-form-field>
+            <mat-label>Tipo de via</mat-label>
+            <mat-select>
+              <mat-option value="option">option</mat-option>
+              <mat-option value="option4">option 1</mat-option>
+              <mat-option value="option1">option 2</mat-option>
+              <mat-option value="option2">option 3</mat-option>
+              <mat-option value="option3">option 4</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="sect_datos" fxFlex="20" fxLayout="row" fxLayoutAlign="start center">
+          <input type="text" placeholder="Nombre de via">
+         </div>
+      <div class="sect_datos" fxFlex="20" fxLayout="row" fxLayoutAlign="start center">
+        <input type="text" placeholder="Numero">
+       </div>
+      <div class="sect_datos" fxFlex="20" fxLayout="row" fxLayoutAlign="start center">
+        <input type="text" placeholder="Interior">
+       </div>
+       <div class="sect_datos" fxFlex="20" fxLayout="row" fxLayoutAlign="start center">
+        <input type="text" placeholder="lote">
+       </div>
+      </div>
+      <div class="inputs_datos" fxFlex="100" fxLayout="row" fxLayoutAlign="start center">
+        
+        <div class="sect_datos" fxFlex="20" fxLayout="row" fxLayoutAlign="start center">
+          <input type="text" placeholder="Nombre de via">
+         </div>
+      <div class="sect_datos" fxFlex="20" fxLayout="row" fxLayoutAlign="start center">
+        <input type="text" placeholder="Numero">
+       </div>
+       <div class="select_tipo-via" fxFlex="20" fxLayout="row" fxLayoutAlign="start center">
+        <mat-form-field>
+          <mat-label>Departamento</mat-label>
+          <mat-select>
+            <mat-option value="option">Amazonas</mat-option>
+            <mat-option value="option4">Cajamarca</mat-option>
+            <mat-option value="option1">Callao</mat-option>
+            <mat-option value="option2">Lima</mat-option>
+            <mat-option value="option3">Tacna</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="select_tipo-via" fxFlex="20" fxLayout="row" fxLayoutAlign="start center">
+        <mat-form-field>
+          <mat-label>Provincia</mat-label>
+          <mat-select>
+            <mat-option value="option">Chachapoyas</mat-option>
+            <mat-option value="option4"> Abancay </mat-option>
+            <mat-option value="option1">Arequipa</mat-option>
+            <mat-option value="option2">Huanta</mat-option>
+            <mat-option value="option3">Calca</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="select_tipo-via" fxFlex="20" fxLayout="row" fxLayoutAlign="start center">
+        <mat-form-field>
+          <mat-label>Distrito</mat-label>
+          <mat-select>
+            <mat-option value="option">84</mat-option>
+            <mat-option value="option4">109</mat-option>
+            <mat-option value="option1">119</mat-option>
+            <mat-option value="option2">127</mat-option>
+            <mat-option value="option3">134</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      </div>
+    </mat-card>
+  </div>
+
+  <div class="card_datos" fxFlex="100" fxLayout="row" fxLayoutAlign="start center">
+    <mat-card fxFlex="100" fxLayout="column" fxLayoutAlign="center start">
+      <div class="inf_datos--razon" fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+        <div class="inf_datos" fxFlex="50" fxLayout="row" fxLayoutAlign="space-between center">
+          <p>razon social</p>
+          <div class="sect_datos" fxFlex="60" fxLayout="row" fxLayoutAlign="start center">
+            <input type="text" placeholder="Indicar">
+           </div>
+        </div>
+        <div class="inf_datos" fxFlex="50" fxLayout="row" fxLayoutAlign="space-between center">
+          <p>Denominación Comercial</p>
+          <div class="sect_datos" fxFlex="60" fxLayout="row" fxLayoutAlign="start center">
+            <input type="text" placeholder="Indicar">
+           </div>
+        </div>
+      </div>
+      <div class="inf_datos--razon" fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+        <div class="inf_datos" fxFlex="50" fxLayout="row" fxLayoutAlign="space-between center">
+          <p>CIIU</p>
+          <div class="select_ciu" fxFlex="60" fxLayout="row" fxLayoutAlign="start center">
+            <mat-form-field>
+              <mat-label>Seleccione</mat-label>
+              <mat-select>
+                <mat-option value="option">option</mat-option>
+                <mat-option value="option1">option 1</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="inf_datos" fxFlex="50" fxLayout="row" fxLayoutAlign="space-between center">
+          <p>Años de Experiecia <br> en medio</p>
+          <div class="sect_datos" fxFlex="60" fxLayout="row" fxLayoutAlign="start center">
+            <input type="text" placeholder="lote">
+           </div>
+        </div>
+      </div>
+      <div class="check_select" fxFlex="100" fxLayout="row" fxLayoutAlign="space-between center">
+        <p><strong>Regimen Tributario</strong></p>
+        <div class="check_datos">
+          <mat-checkbox>
+            <p>Régimen General (RG)</p>
+          </mat-checkbox>
+         </div>
+         <div class="check_datos">
+          <mat-checkbox>
+            <p> Régimen Único Simplificado (RUS)</p>
+          </mat-checkbox>
+         </div>
+         <div class="check_datos">
+          <mat-checkbox>
+            <p> Régimen Especial de Renta (RER)</p>
+          </mat-checkbox>
+         </div>
+         <div class="check_datos">
+          <mat-checkbox>
+            <p> Régimen Mype Tributario (RMT)</p>
+          </mat-checkbox>
+         </div>
+      </div>
+      <div class="inf_datos--razon" fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+        <div class="inf_datos" fxFlex="50" fxLayout="row" fxLayoutAlign="space-between center">
+          <p>Cargo</p>
+          <div class="sect_datos" fxFlex="60" fxLayout="row" fxLayoutAlign="start center">
+            <input type="text" placeholder="">
+           </div>
+        </div>
+        <div class="inf_datos" fxFlex="50" fxLayout="row" fxLayoutAlign="space-between center">
+          <p>Poderes inscritos</p>
+          <div class="sect_datos" fxFlex="60" fxLayout="row" fxLayoutAlign="start center">
+            <input type="text" placeholder="">
+           </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+
+  <div class="card_datos" fxFlex="100" fxLayout="row" fxLayoutAlign="start center">
+    <mat-card fxFlex="100" fxLayout="column" fxLayoutAlign="center start">
+      <div class="ejecutivo_comercial" fxFlex="100" fxLayout="column" fxLayoutAlign="center start">
+        <p>De contar con un AFILIADOR ingrese su DNI, de lo contrario dejar este dato en blanco.</p>
+        <h2>Ejecutivo Comercial (afiliador)</h2>
+        <div class="sect_datos" fxFlex="60" fxLayout="row" fxLayoutAlign="start center">
+          <input type="text" placeholder="DNI del Ejecutivo Comercial">
+         </div>
+      </div>
+    </mat-card>
+  </div>
+</div>
+</div>

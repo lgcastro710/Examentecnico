@@ -1,0 +1,103 @@
+<div class="container_formulario" fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
+  <div class="content_form" fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
+    <h1>¡Se un agente multibanco kasnet!</h1>
+    <div class="sect_form">
+        <input type="text" placeholder="Nombre">
+    </div>
+    <div class="sect_form">
+        <input type="text" placeholder="Apellido Paterno">
+    </div>
+    <div class="sect_form">
+        <input type="text" placeholder="Apellido Materno">
+    </div>
+  </div>
+
+  <div class="select_mail" fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+    <div class="sect_form" fxFlex="50" fxLayout="row" fxLayoutAlign="center center">
+        <input type="text" placeholder="Correo Electronico">
+    </div>
+    <span class="arroba_mail" fxFlex="5" fxLayout="row" fxLayoutAlign="center center">@</span>
+    <div class="btn-select_mail" fxFlex="45" fxLayout="row" fxLayoutAlign="end center">
+      <mat-form-field>
+        <!-- <mat-label>gmail.com</mat-label> -->
+        <mat-select>
+          <mat-option value="option">gmail.com</mat-option>
+          <mat-option value="option4">yahoo.com</mat-option>
+          <mat-option value="option1">hotmail.com</mat-option>
+          <mat-option value="option2">outlook.live.com</mat-option>
+          <mat-option value="option3">otros</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="select--inputs" fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
+    <div class="sect_form">
+        <input type="text" placeholder="Teléfono">
+    </div>
+    <div class="select_ruc">
+      <mat-form-field>
+        <mat-label>¿Cuenta con RUC?</mat-label>
+        <mat-select>
+          <mat-option value="option">Si</mat-option>
+          <mat-option value="option1">No</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="select_ruc">
+      <mat-form-field>
+        <mat-label>Departamento</mat-label>
+        <mat-select>
+          <mat-option value="option">Amazonas</mat-option>
+          <mat-option value="option4">Cajamarca</mat-option>
+          <mat-option value="option1">Callao</mat-option>
+          <mat-option value="option2">Lima</mat-option>
+          <mat-option value="option3">Tacna</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="select_ruc">
+      <mat-form-field>
+        <mat-label>Provincia</mat-label>
+        <mat-select>
+          <mat-option value="option">Chachapoyas</mat-option>
+          <mat-option value="option4"> Abancay </mat-option>
+          <mat-option value="option1">Arequipa</mat-option>
+          <mat-option value="option2">Huanta</mat-option>
+          <mat-option value="option3">Calca</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="select_ruc">
+      <mat-form-field>
+        <mat-label>Distrito</mat-label>
+        <mat-select>
+          <mat-option value="option">84</mat-option>
+          <mat-option value="option4">109</mat-option>
+          <mat-option value="option1">119</mat-option>
+          <mat-option value="option2">127</mat-option>
+          <mat-option value="option3">134</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="codigo_captcha" fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
+      <div class="img_captcha" fxFlex="50" fxLayout="row" fxLayoutAlign="center center">
+        <img src="assets/img/c_captcha.jfif" alt="">
+      </div>
+      <div class="codigo" fxFlex="50" fxLayout="row" fxLayoutAlign="end center">
+        <div class="sect_form">
+            <input type="text" placeholder="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btn_registrar">
+   <a  [routerLink]="[ '/mail' ]">
+     <button fxLayout="row" fxLayoutAlign="space-around center">
+      <i class="material-icons">
+        adjust
+        </i>
+        Registrarse
+    </button></a>
+  </div>
+</div>

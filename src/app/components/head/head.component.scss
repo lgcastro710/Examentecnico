@@ -1,0 +1,32 @@
+
+.head_blue {
+    height: 50px;
+    width: 100%;
+    background: #332877;
+    padding: 10px 5px;
+  }
+  .icon_menu {
+    button {
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      i {
+        color: #dedede;
+        font-size: 2vw;
+        opacity: 0.3;
+      }
+    }
+  }
+  .photo_perfil {
+    cursor: pointer;
+    img {
+      height: 3vw;
+      width: 3vw;
+      border-radius: 50%;
+    }
+  }
+  .icon_notification {
+    font-size: 2vw;
+    color: #fff;
+    transform: rotate(45deg);
+  }

@@ -1,0 +1,266 @@
+.content_validacion{
+    width: 100%;
+    padding: 20px;
+}
+.tabs-validation{
+    width: 100%;
+}
+.option_tabs{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background: #332877;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    p{
+        font-size: 16px;
+        color: #fff;
+    }
+}
+.option_tabs--select{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background: #332877c7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    p{
+        font-size: 16px;
+        color: #fff;
+    }
+}
+.barra_union{
+    height: 20px;
+    width: 100px;
+    background: #332877;
+}
+.title_tbas{
+    h1{
+        font-size: 18px;
+        color: #383838;
+    }
+}
+.sect_form_ruc--dni {
+    width: 100%;
+    padding: 0 10px;
+    input {
+      width: 97%;
+      border: 1px solid #30303026;
+      border-radius: 3px;
+      padding: 5px;
+      margin: 5px;
+      height: 40px;
+      font-size: 16px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  .r_btn{
+      padding: 0px 10px;
+      ::ng-deep.mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{
+          background-color: #0000ff;
+      }
+      ::ng-deep.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+          border-color: #0000ff;
+      }
+  }
+  .inf_btn{
+      margin-top: 15px;
+      width: 75%;
+  }
+  .inf_agente{
+    span{
+        font-size: 16px;
+        font-weight: bold;
+        color: #383838;
+        margin: 0 10px;
+    }
+  }
+.btn_registar--ruc{
+  button {
+    height: 40px;
+    width: 160px;
+    background: #332877;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+}
+
+////////table////////
+
+.tabla_inf-sunat{
+    width: 80%;
+    margin-top: 10px;
+    table{
+        width: 100%;
+        tbody{
+            tr{
+                width: 100%;
+                height: 30px;
+                border: 1px solid #383838;
+            }
+        }
+    }
+}
+.inf_table{
+    height: 30px;
+    border-right: 1px solid #383838;
+    p{
+        font-size: 14px;
+        color: #383838;
+    }
+}
+.check_habilitar{
+    width: 80%;
+    margin-top: 20px;
+}
+.check{
+    p{
+        font-size: 16px;
+        color: green;
+    }
+        ::ng-deep.mat-checkbox-frame{
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+            ::ng-deep.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+             border-radius: 50%;
+             background-color: #0000ff;
+             -webkit-border-radius: 50%;
+             -moz-border-radius: 50%;
+             -ms-border-radius: 50%;
+             -o-border-radius: 50%;
+            }
+}
+
+.card_datos{
+    width: 80%;
+    margin: 5px 0;
+    mat-card{
+        width: 100%;
+        h2{
+            font-size: 16px;
+            color: #383838;
+            margin: 0 0 0 5px;
+        }
+    }
+}
+.select_tipo-via {
+    width: 97%;
+    border: 1px solid #303030;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px;
+    height: 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  .sect_datos {
+    width: 100%;
+    input {
+      width: 97%;
+      border: 1px solid #30303026;
+      border-radius: 3px;
+      padding: 5px;
+      margin: 5px;
+      height: 40px;
+      font-size: 16px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  .inf_datos--razon{
+      width: 100%;    
+  }
+  .inf_datos{
+      width: 100%;
+      padding: 0 10px;
+      p{
+          font-size: 16px;
+          font-weight: bold;
+          color: #383838;
+         
+      }
+  }
+  .select_ciu {
+    width: 97%;
+    border: 1px solid #303030;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px;
+    height: 40px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    mat-form-field {
+      width: 100%;
+    }
+  }
+  .check_select{
+      width: 100%;
+  }
+  .check_datos{
+    p{
+        font-size: 12px;
+        color: #383838;
+    }
+        ::ng-deep.mat-checkbox-frame{
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+            ::ng-deep.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+             border-radius: 50%;
+             background-color: #0000ff;
+             -webkit-border-radius: 50%;
+             -moz-border-radius: 50%;
+             -ms-border-radius: 50%;
+             -o-border-radius: 50%;
+            }
+}
+.ejecutivo_comercial{
+    p{
+        font-size: 16px;
+        color: green;
+    }
+    h2{
+        font-size: 16px;
+        color: #383838;
+        font-weight: bold;
+    }
+}

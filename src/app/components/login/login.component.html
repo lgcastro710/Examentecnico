@@ -1,0 +1,20 @@
+<div class="container_login" fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
+  <div class="content_login" fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
+    <h1>¡Ingresa tu Solicitud!</h1>
+    <div class="sect_form-login" fxLayout="column" fxLayoutAlign="center center">
+        <input type="text" placeholder="Usuario">
+    </div>
+    <div class="sect_form-login" fxLayout="column" fxLayoutAlign="center center">
+        <input type="password" placeholder="Password">
+    </div>
+  </div>
+  <div class="btn_registrar-login">
+   <a [routerLink]="[ '/validacion' ]" >
+     <button fxLayout="row" fxLayoutAlign="space-around center">
+      <i class="material-icons">
+        adjust
+        </i>
+        Ingresar
+    </button></a>
+  </div>
+</div>
